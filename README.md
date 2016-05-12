@@ -9,6 +9,10 @@ The original authors are acknowledged in the header comment.
 
 Unpacks the struct that is stored in the `.fig` file (which is a specialisation of the `.mat` format).  Detects lines, scatter plots, surface plots within the struct as well as textual elements.
 
+Quote from the author who expanded the original:
+
+> an expanded version I built based on Cibby's code above. This one includes features such as subplots, markers and marker sizes, scatter plots, text, patches, surfaces, and legends: 
+
 ## Usage
 
     fname = "/path/to/my/figure.fig"
