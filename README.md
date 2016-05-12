@@ -5,9 +5,17 @@ This file was recovered from a deleted Stack Overflow post, referenced [in a LaT
 
 The original authors are acknowledged in the header comment.
 
+## Functionality
+
+Unpacks the struct that is stored in the `.fig` file (which is a specialisation of the `.mat` format).  Detects lines, scatter plots, surface plots within the struct as well as textual elements.
+
 ## Usage
 
     fname = "/path/to/my/figure.fig"
     OpenMatlabFigureInOctave(fname)
+    
+## Contributions
+
+Contributions are welcome - just send in a pull request.
 
 [1]: http://web.archive.org/web/20100713030737/http://www.ee.usyd.edu.au/~cibby/OCTread_FIG.htm
