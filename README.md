@@ -28,4 +28,4 @@ You might want to extract the data and plot in another language / save in a diff
 
 [1]: http://web.archive.org/web/20100713030737/http://www.ee.usyd.edu.au/~cibby/OCTread_FIG.htm
 [2]: http://stackoverflow.com/questions/11902650/program-to-open-fig-files-saved-by-matlab/16490536#16490536
-[3]: [http://stackoverflow.com/a/36923358/838992]
+[3]: http://stackoverflow.com/a/36923358/838992
