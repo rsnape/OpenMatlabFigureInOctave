@@ -59,6 +59,13 @@ for ii = 1:length(figstruct)
                             hkid(ii,jj,kk) = scatter3(figstruct(ii).children(jj).children(kk).properties.XData,figstruct(ii).children(jj).children(kk).properties.YData, 0*figstruct(ii).children(jj).children(kk).properties.YData, figstruct(ii).children(jj).children(kk).properties.SizeData/5,figstruct(ii).children(jj).children(kk).properties.CData);
                         end
                         continue
+                    case 'specgraph.contourgroup'
+                        if ~isempty(figstruct(ii).children(jj).children(kk).properties.ZData)
+                            [_c, hkid(ii,jj,kk)] = contour(figstruct(ii).children(jj).children(kk).properties.XData, figstruct(ii).children(jj).children(kk).properties.YData, figstruct(ii).children(jj).children(kk).properties.ZData);
+                        else
+                            [_c, hkid(ii,jj,kk)] = contour(figstruct(ii).children(jj).children(kk).properties.XData,figstruct(ii).children(jj).children(kk).properties.YData, 0*figstruct(ii).children(jj).children(kk).properties.YData);
+                        end
+                        continue
                     case 'graph3d.surfaceplot'
                         hkid(ii,jj,kk) = surf(zeros(2,2),zeros(2,2),zeros(2,2),zeros(2,2));
                     case 'patch'
